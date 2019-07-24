@@ -1,0 +1,9 @@
+entrypoint: bundle exec rackup --port $PORT
+env: flex
+runtime: ruby
+
+env_variables:
+  SECRET_KEY_BASE: b4ca7237c7b59fe0cb59756d5218e537d8b1d0a94e2205ea5c85acc0031a60fe25a0920893b659997feea9573f457e59b759f9c7c27770460c43e83e550cd32b
+
+beta_settings:
+  cloud_sql_instances: pocket-ramiro-247718:us-west2:pocket-ramiro

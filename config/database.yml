@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: pocket_ramiro_rails_development
+  database: pocket-ramiro-rails-prod
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -80,8 +80,10 @@ test:
 #
 production:
   <<: *default
-  database: <%= ENV['RDS_DB_NAME'] %>
-  username: <%= ENV['RDS_USERNAME'] %>
-  password: <%= ENV['RDS_PASSWORD'] %>
-  host: <%= ENV['RDS_HOSTNAME'] %>
+  pool: 5
+  timeout: 5000
+  username: postgres
+  password: pocket-ramiro
+  database: pocket-ramiro-rails-prod
+  host: /cloudsql/pocket-ramiro-247718:us-west2:pocket-ramiro
   port: <%= ENV['RDS_PORT'] %>
