@@ -37,13 +37,13 @@ bundle install
 
 Open your Gemfile
 ```
-Ruby '2.6.3'
-rbenv versions '2.6.3'
+ruby '2.6.3'
+gem 'rails', '~> 5.2.3'
 ```
 Install versions
 ```
 rbenv install 2.6.3
-rebenv local 2.6.3
+rbenv local 2.6.3
 gem install bundler -v 1.17.3
 bundle _1.17.3_ install
 ```
@@ -54,32 +54,38 @@ rake db:{create,migrate,seed}
 ```
 ### Getting Started/Requirements/Prerequisites/Dependencies
 
-Ruby version: ruby 2.6.3
+Ruby version: 2.6.3
+Rails version 5.2.3
 
 ## Locations/Where to Find the applications
 ### Pocket Ramiro Rails
 
-development: localhost:3000/api/v1/resources
+development: localhost:3000
 
 production:
-  gcp: https://pocket-ramiro-247718.appspot.com/api/v1/resources
+- gcp: https://pocket-ramiro-247718.appspot.com/api/v1/resources
 
-  aws: http://pocketramirorails2-env.ejk9ccddbs.us-west-1.elasticbeanstalk.com/api/v1/resources (now unused)
+- aws: http://pocketramirorails2-env.ejk9ccddbs.us-west-1.elasticbeanstalk.com/api/v1/resources (now unused)
 
 ### Pocket Ramiro React
 
 development: localhost:3000
 
 production:
-  aws amplify: https://master.d2ybnzra4ei56p.amplifyapp.com
-  gcp: https://pocket-ramiro-react.appspot.com
-  heroku: https://pocket-ramiro-react.herokuapp.com (now unused)
+- aws amplify: https://master.d2ybnzra4ei56p.amplifyapp.com
+
+- gcp: https://pocket-ramiro-react.appspot.com
+
+- heroku: https://pocket-ramiro-react.herokuapp.com (now unused)
 
 ### Pocket Ramiro Documentation
 
 development: localhost:3000
 
-production: https://master.d3bx8qvhmbmxu.amplifyapp.com/
+- production: https://master.d3bx8qvhmbmxu.amplifyapp.com/
+
+## Endpoints
+[Click to view Endpoint Documentation](https://master.d3bx8qvhmbmxu.amplifyapp.com/)
 
 ## Endpoint Versioning
 
@@ -104,7 +110,3 @@ bundle exec rspec
 - Router
 - RSpec
 - Ruby on Rails
-
-
-## Endpoints
-[Endpoint Documentation:](https://master.d3bx8qvhmbmxu.amplifyapp.com/)
