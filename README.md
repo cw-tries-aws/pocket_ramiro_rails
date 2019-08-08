@@ -65,14 +65,14 @@ development: localhost:3000
 production:
 - gcp: https://pocket-ramiro-247718.appspot.com/api/v1/resources
 
-- aws: http://pocketramirorails2-env.ejk9ccddbs.us-west-1.elasticbeanstalk.com/api/v1/resources (now unused)
+- aws: http://pocketramirorails2-env.ejk9ccddbs.us-west-1.elasticbeanstalk.com/api/v1/resources (now terminated to avoid charges)
 
 ### Pocket Ramiro React
 
 development: localhost:3000
 
 production:
-- aws amplify: https://master.d2ybnzra4ei56p.amplifyapp.com
+- aws amplify: https://master.d2ybnzra4ei56p.amplifyapp.com (now terminated to avoid charges)
 
 - gcp: https://pocket-ramiro-react.appspot.com
 
